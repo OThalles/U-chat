@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U-Chat</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/903ee0eee6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="all">
+
+        <header>
+            <div id="headerFlex">
+            <div class="parte">
+                <h1>
+                    U-chat <i class="fa-brands fa-rocketchat"></i></h1>
+            </div>
+            <div class="parte">
+                <span> Conectado: <span id="user">Você</span> </span>
+                <a href="#">Desconectar</a>
+            </div>
+        </div>
+    
+    <div class="chat-msg">
+        
+        <div class="box-msg">
+
+            <div class="content">
+                
+                <!--Local onde ficam as mensagens-->
+
+            </div>
+        </div>
+
+        <a id="scroller" href=""></a>
+
+    </div>
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="emojis--tab none">
+            <div class="all-emoji">
+
+                <span onclick="insertEmoji('happy')">😀</span>
+                <span onclick="insertEmoji('other-happy')">😃</span>
+                <span onclick="insertEmoji('cry-of-funny')">😂</span>
+            </div>
+        </div>
+        <button onclick="emojis()" id="emojibtn"> <img src="https://img.icons8.com/material/24/undefined/tongue-out--v1.png" width="30px"/> </button>
+        
+        <!-- id input-msg -->
+        <input  type="text" id="input-msg" placeholder="Digite sua mensagem..." autocomplete="off">
+        
+        
+        <!-- class:sendButton identificaçao (nao utilizada no css) -->
+        <button class="sendButton" id="sendbtn"> <img src="https://img.icons8.com/ios-glyphs/30/undefined/filled-sent.png" width="30px"/> </button>
+    </footer>
+
+</div>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/ChatScript.js"></script>
+</body>
+</html>
