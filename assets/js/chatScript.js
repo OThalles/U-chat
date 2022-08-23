@@ -1,10 +1,10 @@
     let input = document.getElementById('input-msg');
     var socket = new WebSocket('ws://localhost:8080');
-    
+
     socket.addEventListener('message', function(e){
         const data = JSON.parse(e.data);
-        console.log('ss')
-        
+        let name = (data.name) ? data.name : 'Anônimo';
+
         createDivOtherMsg = document.createElement('div');
         createDivOtherMsg.className = 'item child'
         createDivBaloon = document.createElement('div');
@@ -12,7 +12,7 @@
         createDivNone = document.createElement('div');
         createSpanName = document.createElement('span')
         createSpanName.className = 'user visitante';
-        nameUser = document.createTextNode('Anônimo')
+        nameUser = document.createTextNode(name)
         createSpanName.appendChild(nameUser);
         createSpanMsg = document.createElement('span')
         createSpanMsg.className = 'msg visitante'
